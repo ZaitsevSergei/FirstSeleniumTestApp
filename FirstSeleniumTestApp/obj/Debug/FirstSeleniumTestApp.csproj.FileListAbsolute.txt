@@ -1,0 +1,11 @@
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\FirstSeleniumTestApp.exe.config
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\FirstSeleniumTestApp.exe
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\FirstSeleniumTestApp.pdb
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\WebDriver.dll
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\WebDriver.xml
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\obj\Debug\FirstSeleniumTestApp.csprojResolveAssemblyReference.cache
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\obj\Debug\FirstSeleniumTestApp.csproj.CoreCompileInputs.cache
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\obj\Debug\FirstSeleniumTestApp.exe
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\obj\Debug\FirstSeleniumTestApp.pdb
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\nunit.framework.dll
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\nunit.framework.xml
