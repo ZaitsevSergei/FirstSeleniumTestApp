@@ -1,0 +1,15 @@
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\FirstSeleniumTestApp.exe.config
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\FirstSeleniumTestApp.exe
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\FirstSeleniumTestApp.pdb
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\nunit.framework.dll
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\TestWebUIFramework.dll
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\WebDriver.dll
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\WebDriver.Support.dll
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\TestWebUIFramework.pdb
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\nunit.framework.xml
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\WebDriver.xml
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\bin\Debug\WebDriver.Support.xml
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\obj\Debug\2017.EPAM.FirstSeleniumTestApp.AutomationTestRun.csprojResolveAssemblyReference.cache
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\obj\Debug\2017.EPAM.FirstSeleniumTestApp.AutomationTestRun.csproj.CoreCompileInputs.cache
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\obj\Debug\FirstSeleniumTestApp.exe
+D:\test with csharp\FirstSeleniumTestApp\FirstSeleniumTestApp\obj\Debug\FirstSeleniumTestApp.pdb
