@@ -15,7 +15,8 @@ namespace FirstSeleniumTestApp
         IWebDriver webDriver = new ChromeDriver();
 
         static void Main(string[] args)
-        {            
+        {
+            //var method = typeof(By).GetMethod("Id");
         }
 
         [SetUp]
@@ -23,6 +24,20 @@ namespace FirstSeleniumTestApp
         {
             // Navigate to web page
             webDriver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&amp;Password=&amp;Login=Login");
+        }
+
+        [Test]
+        public void TestEAUserFormPositive()
+        {
+
+            // enter in FirstName tb "Vasya"
+            SeleniumSetMethods.EnterText(webDriver, "Id", "FirstName", "Vasya");
+
+            // Select title Mr.
+            SeleniumSetMethods.SelectDropDownListItem(webDriver, "Id", "TitleId", "Mr.");
+
+            // Click save button
+            SeleniumSetMethods.Click(webDriver, "Name", "Save");
         }
 
         [Test]
@@ -40,7 +55,12 @@ namespace FirstSeleniumTestApp
         [TearDown]
         public void CleanUp()
         {
-            webDriver.Close();
+            Console.WriteLine("All test executed. Do yo want close chrome? y/n: ");
+            string ch = Console.ReadLine();
+            if (ch == "y" || ch == "Y")
+            {
+                webDriver.Close();
+            }
         }
     }
 }

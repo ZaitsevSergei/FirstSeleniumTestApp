@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Support.UI;
 
 namespace FirstSeleniumTestApp
 {
@@ -22,7 +23,7 @@ namespace FirstSeleniumTestApp
             try
             {
                 // Find method from By class with reflection by the name that after will be used if FindElement method of web driver instance
-                var findByMethod = typeof(By).GetMethod(attribute, BindingFlags.Static);
+                var findByMethod = typeof(By).GetMethod(attribute);
                 // Find the control by the element value and put test string into control
                 return webDriver.FindElement((By)findByMethod.Invoke(null, new object[] { attributeValue }));
             }
@@ -64,6 +65,21 @@ namespace FirstSeleniumTestApp
         {
             IWebElement webElement = FindElement(webDriver, attribute, attributeValue);
             webElement?.Click();
+        }
+
+        /// <summary>
+        /// Selects an specific item in specified dropdown list
+        /// </summary>
+        /// <param name="webDriver">Web driver of browser</param>
+        /// <param name="attribute">Tag, Id, ClassName, Name</param>
+        /// <param name="attributeValue">value of element</param>
+        /// <param name="itemToSelect">item to select in dropdown list</param>
+        public static void SelectDropDownListItem(IWebDriver webDriver, string attribute, string attributeValue, string itemToSelect)
+        {
+            IWebElement dropDownList = FindElement(webDriver, attribute, attributeValue);
+            SelectElement selectDropDownListElement = new SelectElement(dropDownList);
+            selectDropDownListElement.SelectByText(itemToSelect);
+            
         }
     }
 }
