@@ -1,2 +1,5 @@
 /.vs
 /FirstSeleniumTestApp/bin
+/FirstSeleniumTestApp/obj/
+/TestWebUIFramework/bin/
+/TestWebUIFramework/obj/
