@@ -38,6 +38,10 @@ namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
 
             // Click save button
             SeleniumSetMethods.Click(How.Name, "Save");
+
+            System.Diagnostics.Debug.WriteLine("FirstName field is {0}", SeleniumGetMethods.GetText(How.Id, "FirstName"));
+
+            System.Diagnostics.Debug.WriteLine("Title dropdown list's selected item is {0}", SeleniumGetMethods.GetDropDownListSelectedItem(How.Id, "TitleId"));
         }
 
         [Test]
@@ -56,11 +60,10 @@ namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
         public void CleanUp()
         {
             Console.WriteLine("All test executed. Do yo want close chrome? y/n: ");
-            string ch = Console.ReadLine();
-            if (ch == "y" || ch == "Y")
-            {
+            
+            
                 WebDriverTools.WebDriver.Close();
-            }
+            
         }
     }
 }

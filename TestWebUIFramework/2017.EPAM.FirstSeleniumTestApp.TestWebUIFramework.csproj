@@ -7,8 +7,8 @@
     <ProjectGuid>{25C3296C-038A-4FDB-A571-DCE4D1E2747E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestWebUIFramework</RootNamespace>
-    <AssemblyName>TestWebUIFramework</AssemblyName>
+    <RootNamespace>_2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework</RootNamespace>
+    <AssemblyName>2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SeleniumGetMethods.cs" />
     <Compile Include="WebDriverTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeleniumSetMethods.cs" />

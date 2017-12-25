@@ -23,11 +23,11 @@ namespace _2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework
             }
             catch (ArgumentNullException)
             {
-                Console.WriteLine("One of the params is null");
+                System.Diagnostics.Debug.WriteLine("One of the params is null");
             }
             catch (NullReferenceException)
             {
-                Console.WriteLine("Element with the Element name: '{0}' doesn't exists", attribute, attributeValue);
+                System.Diagnostics.Debug.WriteLine("Element with the Element name: '{0}' doesn't exists", attribute, attributeValue);
             }
 
             return null;

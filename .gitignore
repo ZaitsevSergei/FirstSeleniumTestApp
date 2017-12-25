@@ -1,1 +1,13 @@
 /.vs
+/FirstSeleniumTestApp/bin/Debug/2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.dll
+/FirstSeleniumTestApp/bin/Debug/2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.pdb
+/FirstSeleniumTestApp/bin/Debug/FirstSeleniumTestApp.exe
+/FirstSeleniumTestApp/bin/Debug/FirstSeleniumTestApp.pdb
+/FirstSeleniumTestApp/bin/Debug/nunit_random_seed.tmp
+/FirstSeleniumTestApp/bin/Debug/TestWebUIFramework.dll
+/FirstSeleniumTestApp/bin/Debug/TestWebUIFramework.pdb
+/FirstSeleniumTestApp/obj/Debug/2017.EPAM.FirstSeleniumTestApp.AutomationTestRun.csproj.CoreCompileInputs.cache
+/FirstSeleniumTestApp/obj/Debug/2017.EPAM.FirstSeleniumTestApp.AutomationTestRun.csproj.FileListAbsolute.txt
+/FirstSeleniumTestApp/obj/Debug/2017.EPAM.FirstSeleniumTestApp.AutomationTestRun.csprojResolveAssemblyReference.cache
+/FirstSeleniumTestApp/obj/Debug/FirstSeleniumTestApp.exe
+/FirstSeleniumTestApp/obj/Debug/FirstSeleniumTestApp.pdb
