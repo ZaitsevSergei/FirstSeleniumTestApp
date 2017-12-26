@@ -1,5 +1,5 @@
 /.vs
-/FirstSeleniumTestApp/bin
-/FirstSeleniumTestApp/obj/
-/TestWebUIFramework/bin/
-/TestWebUIFramework/obj/
+2017.EPAM.FirstSeleniumTestApp.AutomationTestRun\bin
+2017.EPAM.FirstSeleniumTestApp.AutomationTestRun\obj
+2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin
+2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\obj
