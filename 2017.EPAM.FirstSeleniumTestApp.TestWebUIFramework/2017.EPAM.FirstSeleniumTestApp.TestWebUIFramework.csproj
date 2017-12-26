@@ -52,7 +52,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetWebElemets.cs" />
     <Compile Include="SeleniumGetMethods.cs" />
+    <Compile Include="TagAttributes.cs" />
     <Compile Include="WebDriverTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeleniumSetMethods.cs" />

@@ -28,7 +28,7 @@ namespace _2017.EPAM.FirstSeleniumTestApp.PageObjectLibrary.ExecuteAutomation
         /// <summary>
         /// Inital input element
         /// </summary>
-        [FindsBy(How = How.Id, Using = "Initial")]
+        [FindsBy(How = How.Id, Using = "Initial")]        
         public IWebElement InitialInput { get; set; }
 
         /// <summary>

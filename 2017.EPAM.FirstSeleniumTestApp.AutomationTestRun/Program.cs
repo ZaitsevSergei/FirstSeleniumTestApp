@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.PageObjects;
+using _2017.EPAM.FirstSeleniumTestApp.PageObjectLibrary.ExecuteAutomation;
 
 namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
 {
@@ -24,6 +25,24 @@ namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
             // Navigate to web page
             WebDriverTools.WebDriver = new ChromeDriver();
             WebDriverTools.WebDriver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&amp;Password=&amp;Login=Login");
+        }
+
+        // test EA user form web element using page object
+        [Test]
+        public void TestPageObjectEAUserForm()
+        {
+            // create page object instance of this page
+            PageObjectEAUserForm page = new PageObjectEAUserForm();
+            // get properties of page objects that define the page web elements
+            var pageProperties = page.GetType().GetProperties();
+            // create an array of web elements of the page
+            IWebElement[] pageWebElements = new IWebElement[pageProperties.Length];
+            for(int i = 0; i < pageProperties.Length; i++)
+            {
+                pageWebElements[i] = pageProperties[i].GetValue(page) as IWebElement;
+            }
+            var textWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.text).ToArray();
+            
         }
 
         [Test]
