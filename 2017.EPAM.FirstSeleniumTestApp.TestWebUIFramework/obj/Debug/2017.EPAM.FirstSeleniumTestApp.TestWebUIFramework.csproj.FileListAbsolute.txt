@@ -10,15 +10,3 @@ D:\test with csharp\FirstSeleniumTestApp\TestWebUIFramework\bin\Debug\2017.EPAM.
 D:\test with csharp\FirstSeleniumTestApp\TestWebUIFramework\bin\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.pdb
 D:\test with csharp\FirstSeleniumTestApp\TestWebUIFramework\obj\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.dll
 D:\test with csharp\FirstSeleniumTestApp\TestWebUIFramework\obj\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.pdb
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.dll
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.pdb
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin\Debug\nunit.framework.dll
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin\Debug\WebDriver.dll
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin\Debug\WebDriver.Support.dll
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin\Debug\nunit.framework.xml
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin\Debug\WebDriver.xml
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\bin\Debug\WebDriver.Support.xml
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\obj\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.csprojResolveAssemblyReference.cache
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\obj\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.csproj.CoreCompileInputs.cache
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\obj\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.dll
-D:\test with csharp\2017.EPAM.FirstSeleniumTestApp\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\obj\Debug\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.pdb

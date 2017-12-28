@@ -15,17 +15,17 @@ namespace _2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework
         /// <summary>
         /// Invokes SendKeys for each web element in collection
         /// </summary>
-        /// <param name="webElementCollection"></param>
+        /// <param name="webElements">web elements collection</param>
         /// <param name="testText">test string</param>
-        public static void SendKeys(this IEnumerable<IWebElement> webElementCollection, string testText)
+        public static void SendKeys(this IEnumerable<IWebElement> webElements, string testText)
         {
-            Parallel.ForEach(webElementCollection, (webElement) => webElement.SendKeys(testText));            
+            Parallel.ForEach(webElements, (webElement) => webElement.SendKeys(testText));            
         }
 
         /// <summary>
         /// Get values of input elements in collection
         /// </summary>
-        /// <param name="webElementCollection"></param>
+        /// <param name="webElementCollection">web elements collection</param>
         /// <returns></returns>
         public static string[] GetValuesOfInputs(this IEnumerable<IWebElement> webElementCollection)
         {
@@ -56,6 +56,15 @@ namespace _2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework
             });
 
             return flag;
+        }
+
+        /// <summary>
+        /// Clicks on each web element in collection
+        /// </summary>
+        /// <param name="webElements">web elements collection</param>
+        public static void Click(this IEnumerable<IWebElement> webElements)
+        {
+            Parallel.ForEach(webElements, (webElement) => webElement.Click());
         }
     }
 }

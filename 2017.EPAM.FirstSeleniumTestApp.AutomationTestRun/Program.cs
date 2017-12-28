@@ -53,6 +53,19 @@ namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
             var textWebElementValues = WebElementExtensions.GetValuesOfInputs(textWebElements);
             // check that they isn't empty
             Assert.AreEqual(true, WebElementExtensions.IsFieldsNotEmpty(textWebElementValues));
+
+            // get all input checkboxes
+            var checkboxWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.checkbox).ToArray();
+            WebElementExtensions.Click(checkboxWebElements);
+            
+            // get all input radio buttons
+            var radioWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.radio).ToArray();
+            WebElementExtensions.Click(radioWebElements);
+
+            // get all buttons
+            var buttonWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.button).ToArray();
+            WebElementExtensions.Click(buttonWebElements);
+
         }
 
         [Test]
