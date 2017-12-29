@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtonsExtensions.cs" />
     <Compile Include="GetWebElemets.cs" />
     <Compile Include="SeleniumGetMethods.cs" />
     <Compile Include="TagAttributes.cs" />
