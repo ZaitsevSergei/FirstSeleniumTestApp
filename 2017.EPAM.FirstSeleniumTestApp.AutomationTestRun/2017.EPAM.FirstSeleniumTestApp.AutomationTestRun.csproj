@@ -62,7 +62,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TestWebUIFramework\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.csproj">
+    <ProjectReference Include="..\2017.EPAM.FirstSeleniumTestApp.PageObjectLibrary\2017.EPAM.FirstSeleniumTestApp.PageObjectLibrary.csproj">
+      <Project>{ed1efe49-892b-4c14-bc8a-37d632b44feb}</Project>
+      <Name>2017.EPAM.FirstSeleniumTestApp.PageObjectLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework\2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework.csproj">
       <Project>{25c3296c-038a-4fdb-a571-dce4d1e2747e}</Project>
       <Name>2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework</Name>
     </ProjectReference>
