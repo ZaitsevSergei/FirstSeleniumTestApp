@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ExecuteAutomation\PageObjectEALoginForm.cs" />
     <Compile Include="ExecuteAutomation\PageObjectEAUserForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
