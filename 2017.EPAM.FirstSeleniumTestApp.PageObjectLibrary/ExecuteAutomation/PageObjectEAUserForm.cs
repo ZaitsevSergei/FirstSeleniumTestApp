@@ -90,5 +90,22 @@ namespace _2017.EPAM.FirstSeleniumTestApp.PageObjectLibrary.ExecuteAutomation
         /// </summary>
         [FindsBy(How = How.XPath, Using = "//input[@type='radio']")]
         public IList<IWebElement> RadioButtons { get; set; }
+
+        public void FillUserForm()
+        {
+            FirstNameInput.SendKeys("hi");
+
+            // send test strings to text fields using TextInputFields
+            WebElementExtensions.SendKeys(TextInputTags, "another string");
+
+            // get all input checkboxes, click them
+            WebElementExtensions.Click(CheckBoxes);
+
+            // get all input radio buttons, click them
+            WebElementExtensions.Click(RadioButtons);
+
+            // save changes by clicking save button
+            SaveButton.Click();
+        }
     }
 }

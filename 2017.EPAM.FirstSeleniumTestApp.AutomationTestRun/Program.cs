@@ -25,10 +25,30 @@ namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
         {
             // Navigate to web page
             WebDriverTools.WebDriver = new ChromeDriver();
-            WebDriverTools.WebDriver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&amp;Password=&amp;Login=Login");
+            WebDriverTools.WebDriver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
         }
 
-        
+        [Test]
+        public void TestEAApplication()
+        {
+            // Login to Application
+            PageObjectEALoginForm loginPage = new PageObjectEALoginForm();
+            // login and navigate to user form
+            PageObjectEAUserForm userFormPage = loginPage.Login("vasya", "gfhjkm");
+
+            // fill user form
+            userFormPage.FillUserForm();
+
+            // get values of these fields
+            var textWebElementValues = WebElementExtensions.GetValuesOfInputs(userFormPage.TextInputTags);
+            // check that they isn't empty
+            Assert.AreEqual(true, WebElementExtensions.IsFieldsNotEmpty(textWebElementValues));
+
+            // verify checkboxes
+            Assert.AreEqual(true, ButtonsExtensions.VerifyCheckboxesGroup(userFormPage.CheckBoxes, 2));
+            // verify radio buttons
+            Assert.AreEqual(true, ButtonsExtensions.VerifyRadioButtonsGroup(userFormPage.RadioButtons));
+        }
 
         // test EA user form web element using page object
         [Test]
