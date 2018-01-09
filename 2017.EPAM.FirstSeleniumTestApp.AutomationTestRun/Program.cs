@@ -54,17 +54,25 @@ namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
             // check that they isn't empty
             Assert.AreEqual(true, WebElementExtensions.IsFieldsNotEmpty(textWebElementValues));
 
-            // get all input checkboxes
+            // get all input checkboxes, click them
             var checkboxWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.checkbox).ToArray();
-            WebElementExtensions.Click(checkboxWebElements);
-            
-            // get all input radio buttons
+            WebElementExtensions.Click(checkboxWebElements);            
+
+            // get all input radio buttons, click them
             var radioWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.radio).ToArray();
             WebElementExtensions.Click(radioWebElements);
+            
 
-            // get all buttons
+            // get all buttons and click them
             var buttonWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.button).ToArray();
             WebElementExtensions.Click(buttonWebElements);
+
+            // check controls
+            // verify checkboxes
+            Assert.AreEqual(true, ButtonsExtensions.VerifyCheckboxesGroup(checkboxWebElements, 2));
+            // verify radio buttons
+            Assert.AreEqual(true, ButtonsExtensions.VerifyRadioButtonsGroup(radioWebElements));
+
 
         }
 
