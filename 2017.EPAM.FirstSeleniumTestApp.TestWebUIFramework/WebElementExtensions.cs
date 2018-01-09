@@ -19,7 +19,11 @@ namespace _2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework
         /// <param name="testText">test string</param>
         public static void SendKeys(this IEnumerable<IWebElement> webElements, string testText)
         {
-            Parallel.ForEach(webElements, (webElement) => webElement.SendKeys(testText));            
+            //Parallel.ForEach(webElements, (webElement) => webElement.SendKeys(testText));
+            foreach (var webElement in webElements)
+            {
+                webElement.SendKeys(testText);
+            }
         }
 
         /// <summary>
@@ -64,7 +68,11 @@ namespace _2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework
         /// <param name="webElements">web elements collection</param>
         public static void Click(this IEnumerable<IWebElement> webElements)
         {
-            Parallel.ForEach(webElements, (webElement) => webElement.Click());
+            //Parallel.ForEach(webElements, (webElement) => webElement.Click());
+            foreach (var webElement in webElements)
+            {
+                webElement.Click();
+            }
         }
     }
 }

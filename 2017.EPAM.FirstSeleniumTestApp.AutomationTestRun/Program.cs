@@ -35,45 +35,29 @@ namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
             // create page object instance of this page
             var page = new PageObjectEAUserForm();
             page.FirstNameInput.SendKeys("hi");
-            // get properties of page objects that define the page web elements
-            var pageProperties = page.GetType().GetProperties();
-            // create an array of web elements of the page ant init it in the loop
-            IWebElement[] pageWebElements = new IWebElement[pageProperties.Length];
-            for(int i = 0; i < pageProperties.Length; i++)
-            {
-                pageWebElements[i] = pageProperties[i].GetValue(page) as IWebElement;
-            }
+            
+            // send test strings to text fields using TextInputFields
+            WebElementExtensions.SendKeys(page.TextInputTags, "another string");
 
-            // get all input text fields
-            var textWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.text).ToArray();
-            // send test strings to them
-            WebElementExtensions.SendKeys(textWebElements, "test string");
-            Debug.WriteLine("test strings sent to inputs");
             // get values of these fields
-            var textWebElementValues = WebElementExtensions.GetValuesOfInputs(textWebElements);
+            var textWebElementValues = WebElementExtensions.GetValuesOfInputs(page.TextInputTags);
             // check that they isn't empty
             Assert.AreEqual(true, WebElementExtensions.IsFieldsNotEmpty(textWebElementValues));
 
             // get all input checkboxes, click them
-            var checkboxWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.checkbox).ToArray();
-            WebElementExtensions.Click(checkboxWebElements);            
+            WebElementExtensions.Click(page.CheckBoxes);            
 
             // get all input radio buttons, click them
-            var radioWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.radio).ToArray();
-            WebElementExtensions.Click(radioWebElements);
-            
+            WebElementExtensions.Click(page.RadioButtons);
 
-            // get all buttons and click them
-            var buttonWebElements = GetWebElemets.GetSpecifiedTypeInputWebElements(pageWebElements, InputTypeAttributeValue.button).ToArray();
-            WebElementExtensions.Click(buttonWebElements);
+            // save changes by clicking save button
+            page.SaveButton.Click();
 
             // check controls
             // verify checkboxes
-            Assert.AreEqual(true, ButtonsExtensions.VerifyCheckboxesGroup(checkboxWebElements, 2));
+            Assert.AreEqual(true, ButtonsExtensions.VerifyCheckboxesGroup(page.CheckBoxes, 2));
             // verify radio buttons
-            Assert.AreEqual(true, ButtonsExtensions.VerifyRadioButtonsGroup(radioWebElements));
-
-
+            Assert.AreEqual(true, ButtonsExtensions.VerifyRadioButtonsGroup(page.RadioButtons));
         }
 
         [Test]

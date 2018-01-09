@@ -72,5 +72,23 @@ namespace _2017.EPAM.FirstSeleniumTestApp.PageObjectLibrary.ExecuteAutomation
         /// </summary>
         [FindsBy(How = How.Name, Using = "Save")]
         public IWebElement SaveButton { get; set; }
+
+        /// <summary>
+        /// List of all text inputs in user form
+        /// </summary>
+        [FindsBy(How = How.XPath, Using = "//input[@type='text']")]
+        public IList<IWebElement> TextInputTags { get; set; }
+
+        /// <summary>
+        /// List of all checkboxes in user form
+        /// </summary>
+        [FindsBy(How = How.XPath, Using = "//input[@type='checkbox']")]
+        public IList<IWebElement> CheckBoxes { get; set; }
+
+        /// <summary>
+        /// List of all radio buttons in user form
+        /// </summary>
+        [FindsBy(How = How.XPath, Using = "//input[@type='radio']")]
+        public IList<IWebElement> RadioButtons { get; set; }
     }
 }
