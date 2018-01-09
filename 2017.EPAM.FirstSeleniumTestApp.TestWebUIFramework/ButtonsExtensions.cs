@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,9 +46,16 @@ namespace _2017.EPAM.FirstSeleniumTestApp.TestWebUIFramework
             int selectedQuantity = 0;
             foreach (var webElement in webElements)
             {
-                if (webElement.Selected)
+                try
                 {
-                    selectedQuantity++;
+                    if (webElement.Selected)
+                    {
+                        selectedQuantity++;
+                    }
+                }
+                catch(NullReferenceException)
+                {
+                    Debug.WriteLine("{0} isn't checked", webElement.GetAttribute("Id"));
                 }
             }
 
