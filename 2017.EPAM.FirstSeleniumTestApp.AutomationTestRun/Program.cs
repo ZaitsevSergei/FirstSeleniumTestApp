@@ -28,6 +28,8 @@ namespace _2017.EPAM.FirstSeleniumTestApp.FirstSeleniumTestApp
             WebDriverTools.WebDriver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&amp;Password=&amp;Login=Login");
         }
 
+        
+
         // test EA user form web element using page object
         [Test]
         public void TestPageObjectEAUserForm()
